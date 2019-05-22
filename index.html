@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+  <section id='application-root'></section>
+
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type='text/babel'>
+    function app() { 
+      return (
+        <div>
+            <header>
+              <h1>Sally Student</h1>
+              <p>UI/ UX web developer</p>
+            </header>
+
+            <main>
+              <h2>Work experience</h2>
+              <p>Bills Used Cars | Sales supervisor | 11/82-04/85</p>
+              <ul>
+                <li>Make sales</li>
+                <li>Sell cars</li>
+                <li>Lend sales wisdom</li>
+              </ul>
+              <p>Insurance America | Insurance sales | 07/79-11/82</p>
+              <ul>
+                <li>cold call</li>
+                <li>cold call</li>
+                <li>cold call</li>
+              </ul>
+              <h2>Education</h2>
+              <ul>
+                <li>Bachelors of buisness - the college of buisness</li>
+                <li>Masters of sales - sales emporium</li>
+                <li>CPR certification</li>
+              </ul>
+            </main>
+
+            <section>
+              <h2>fun facts</h2>
+              <p>I once sold a yacht to jerry sinfeld's manager</p>
+              <img src="http://thriftnthrive.com/wp-content/uploads/2013/11/Avon-Lady.jpg" alt="image of sales woman"/>
+            </section>
+
+            <address>
+              <h2>contact info</h2>
+              <ul>
+                <li>1717 Millbrook ave. plymoth WI 58505</li>
+                <li>Phone: (888)577-4302</li>
+                <li><a href="mailto:sallysellstuff@gmail.com">sallysellstuff@gmail.com</a></li>
+              </ul>
+            </address>
+          </div>
+      );
+    };
+   
+ReactDOM.render(
+    React.createElement(app),
+    document.querySelector('#application-root')
+  );
+  </script>
+  <style>
+    ul {
+      list-style: none;
+    }
+  </style>
+</body>
+</html>
